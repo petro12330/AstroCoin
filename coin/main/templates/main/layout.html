@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+  <title>Astrocoin</title>
+    <link rel="shortcut icon" href="{% static 'main/img/svg/star_icon.jpg' %}" type="image/x-icon">
+
+
+  <link rel="stylesheet" href="{% static 'main/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/layout.css' %}">
+    {% block style %} {% endblock%}
+
+  <link href="//db.onlinewebfonts.com/c/341e27032d2425bbb38e134289df92e8?family=Mabry+Pro+Black" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/" class="heder_logo_link">
+                        <img src="{% static 'main/img/svg/logo_coin.svg' %}" alt="Astrocoin" class="header_logo_pic">
+                    </a>
+                </div>
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="/shop" class="header_link">Магазин</a>
+                        </li>
+                         <li class="header_item">
+                            <a href="/get" class="header_link">Как получить?</a>
+                        </li>
+                         <li class="header_item">
+                             {% if user.is_authenticated %}
+                                            <a href="log_in/log_out" class="header_link">Выйти</a>
+                             {% else %}
+                                               <a href="log_in" class="header_link">Войти</a>
+                             {% endif %}
+
+                        </li>
+                        <li class="header_item">
+                            <div class="btn_reg">
+                                      {% if user.is_authenticated %}
+                                            <a href="/" class="button1">Привет, {{ user.username }}! </a>
+                                      {% else %}
+                                               <a href="log_in/register" class="button1">Зарегистрироваться</a>
+                                      {% endif %}
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            </div>
+        </div>
+    </header>
+                {% block body %}
+                {% endblock%}
+    <footer>
+        <div class="wrapper">
+            <div class="footer_wrapper">
+                <div class="footer_logo">
+                    <a href="/" class="footer_logo_link">
+                        <img src="{% static 'main/img/svg/logo_coin.svg' %}" alt="Astrocoin" class="footer_logo_pic">
+                    </a>
+                </div>
+                <nav class="footer_nav">
+                    <ul class="footer_list">
+                        <li class="footer_item">
+                            <a href="/shop" class="footer_link">Магазин</a>
+                        </li>
+                         <li class="footer_item">
+                            <a href="/get" class="footer_link">Как получить?</a>
+                        </li>
+                         <li class="footer_item">
+
+                              {% if user.is_authenticated %}
+                                            <a href="log_in/log_out" class="footer_link">Выйти</a>
+                             {% else %}
+                                               <a href="log_in" class="footer_link">Войти</a>
+                             {% endif %}
+                        </li>
+                        <li class="footer_item">
+                            <div class="btn_reg">
+                                <a href="#!" class="reg">
+
+                                     {% if user.is_authenticated %}
+                                            <a href="/" class="button2">Привет, {{ user.username }}! </a>
+                                      {% else %}
+                                               <a href="log_in/register" class="button2">Зарегистрироваться</a>
+                                      {% endif %}
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

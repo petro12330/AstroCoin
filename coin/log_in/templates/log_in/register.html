@@ -1,0 +1,26 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'log_in/css/register.css' %}">
+{% endblock %}
+{% block body %}
+ <main class="main">
+      <div class="rov">
+         <div class="content">
+             <h1>Зарегистрироваться</h1>
+          <form method="post">
+              {% csrf_token %}
+              <p><label for="id_username" >Имя пользователя:</label> <input type="text" name="username" placeholder="Логин" maxlength="150" autocapitalize="none" autocomplete="username" autofocus required id="id_username"></p>
+<p><label for="id_password1">Пароль:</label> <input  placeholder="Пароль"  type="password" name="password1" autocomplete="new-password" required id="id_password1"> <span class="helptext">
+<p><label for="id_password2">Подтверждение пароля:</label> <input placeholder="Повторите пароль" type="password" name="password2" autocomplete="new-password" required id="id_password2"></p>
+
+              <button type="submit" class="log">Зарегистрироваться</button>
+
+
+         </form>
+         </div>
+      </div>
+ </main>
+{% endblock %}
+
+

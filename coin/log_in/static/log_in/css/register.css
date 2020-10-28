@@ -1,0 +1,46 @@
+.main{
+   display: flex;
+  justify-content: center;
+}
+.rov{
+    min-width: 800px;
+    margin-top: 350px;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+
+
+
+}
+.content{
+    display:flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 90px;
+    font-family: Mabry Pro;
+    font-style: normal;
+    font-weight: normal;
+    color: #555AB1;
+}
+h1{
+    font-size: 50px;
+}
+input{
+    outline: none;
+    border: none;
+    margin-top: 50px;
+    border-bottom: 3px solid #555AB1;
+}
+.form_data{
+    display: inline-flex;
+}
+button.log{
+    margin-top: 60px;
+   width: 220px;
+    height: 48px;
+    background: #555AB1;
+    border-radius: 5px;
+}
+p.text{
+    max-width: 300px;
+}

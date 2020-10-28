@@ -1,0 +1,158 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'main/css/get.css' %}">
+{% endblock %}
+{% block body %}
+    <main class="main">
+        <div class="main_wrapper">
+            <div class="row">
+                <p class="title_row"> Как получить Астрокоины?</p>
+                <ul class="main_list">
+                    <li class="main_title">
+                        <h1 class="tit_text">Не пропускать занятия</h1>
+                            <div class="info">
+                                <h2 class="text">
+                                    Не пропускай занятия в течение 1 месяца и получи заслуженные Астрокоины
+                                </h2>
+                                <p class="price">
+                                        50 <img src="{% static 'main/img/svg/star.svg' %}" alt="звезда" class="star">
+                                </p>
+                            </div>
+                        <div class="list_line">  </div>
+                    </li>
+                    <li class="main_title">
+                        <h1 class="tit_text">Придумай название своей команды</h1>
+                            <div class="info">
+                                <h2 class="text">
+                                    Награду получает каждый член команды
+                                </h2>
+                                <p class="price">
+                                        30 <img src="{% static 'main/img/svg/star.svg' %}" alt="звезда" class="star">
+                                </p>
+                            </div>
+                        <div class="list_line">  </div>
+                        </li>
+                    <li class="main_title">
+                        <h1 class="tit_text">Стань помощником педагога на занятии</h1>
+                            <div class="info">
+                                <h2 class="text">
+                                    Выполни два любых пункта<br>
+                                -помоги преподавателю ввести пароли на компьютерах<br>
+                                -помоги разобраться другим ребятам, почему не работает программа; почему робот не слушается; подскажи, как правильно сделать задание<br>
+                                -помоги убрать конструктор после занятия<br>
+                                -подготовь разминку для ребят, расскажи ее цель, и проведи ее в перерыве
+                                </h2>
+                                <p class="price">
+                                        30 <img src="{% static 'main/img/svg/star.svg' %}" alt="звезда" class="star">
+                                </p>
+                            </div>
+                        <div class="list_line">  </div>
+                        </li>
+                    <li class="main_title">
+                        <h1 class="tit_text">Нарисуй логотип своей команды</h1>
+                            <div class="info">
+                                <h2 class="text">
+                                    Нарисуйте крутой логотип группы, в которой занимаетесь, утвердите его у педагога и получи заслуженные Астрокоины
+                                </h2>
+                                <p class="price">
+                                        40 <img src=" {% static 'main/img/svg/star.svg' %}" alt="звезда" class="star">
+                                </p>
+                            </div>
+                        <div class="list_line">  </div>
+                        </li>
+                     <li class="main_title">
+                        <h1 class="tit_text">Создай собственный проект</h1>
+                            <div class="info">
+                                <h2 class="text">
+
+                                    <strong>Креативное программирование:</strong><br><br>
+                                    - Наличие сюжета (вступление, основная часть, концовка)<br>
+                                    - Использовать минимум 5 спрайтов и 3 фона<br>
+                                    - Использовать систему координат<br><br>
+
+                                    <strong>Компьютерная грамотность и цифровое творчество (любой проект на выбор):</strong><br><br>
+                                    - Сайт<br>
+                                    - Презентация<br>
+                                    - Открытка<br>
+                                    - Видео-проект<br><br>
+
+                                    <strong>Python (любой проект на выбор):</strong><br><br>
+                                    - Мини-учебник с вопросами и ответами<br>
+                                    - База знаний<br>
+                                    - Викторина<br>
+                                    - Любой индивидуальный проект, который можно продемонстрировать одногруппникам/друзьям/родителям<br><br>
+                                </h2>
+                                <p class="price">
+                                        40 <img src=" {% static 'main/img/svg/star.svg' %}" alt="звезда" class="star">
+                                </p>
+                            </div>
+                        <div class="list_line">  </div>
+                        </li>
+                    <li class="main_title">
+                        <h1 class="tit_text">Создай групповой проект</h1>
+                            <div class="info">
+                                <h2 class="text">
+
+
+                                    - Наличие сюжета (вступление, основная часть, концовка)<br>
+                                    - Четкая, понятная структура проекта<br>
+                                    - Командная работа<br>
+                                </h2>
+                                <p class="price">
+                                        50 <img src=" {% static 'main/img/svg/star.svg' %}" alt="звезда" class="star">
+                                </p>
+                            </div>
+                        <div class="list_line">  </div>
+                        </li>
+                      <li class="main_title">
+                        <h1 class="tit_text">Выполняй задания дома</h1>
+                            <div class="info">
+                                <h2 class="text">
+
+                                        Выполни дома дополнительные задания,
+                                    о которых сказал преподаватель в конце занятия, и покажи,
+                                    что получилось перед следующим занятием.
+                                </h2>
+                                <p class="price">
+                                        30 <img src=" {% static 'main/img/svg/star.svg' %}" alt="звезда" class="star">
+                                </p>
+                            </div>
+                        <div class="list_line">  </div>
+                        </li>
+                    <li class="main_title">
+                        <h1 class="tit_text">Участие в соревнованиях</h1>
+                            <div class="info">
+                                <h2 class="text">
+
+                                        Участвуй в соревнованиях, конкурсах как представитель Алгоритмики. И получай заслуженные Астрокоины.
+                                </h2>
+                                <p class="price">
+                                        70 <img src=" {% static 'main/img/svg/star.svg' %}" alt="звезда" class="star">
+                                </p>
+                            </div>
+                        <div class="list_line">  </div>
+                        </li>
+                    <li class="main_title">
+                        <h1 class="tit_text">Отзыв родителей.</h1>
+                            <div class="info">
+                                <h2 class="text">
+
+                                    <strong>Ваши родители могут помочь заработать для вас Астрокоины.</strong><br><br>
+                                    Для этого нужно:<br>
+                                    -снять видеоотзыв (80 Астрокоинов) и разместить в своем инстаграм аккаунте, отметив нашу школу @algoritmika.mytishchi<br>
+                                    -написать текстовый отзыв (40 Астрокоинов) и разместить его на странице
+                                    <a href="https://vk.com/topic-167213530_40564317" class="text_link" >Алгоритмика Мытищи Вконтакте</a>
+                                </h2>
+                                <p class="price">
+                                        80 <img src=" {% static 'main/img/svg/star.svg' %}" alt="звезда" class="star">
+                                </p>
+                            </div>
+
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+    </main>
+{% endblock %}

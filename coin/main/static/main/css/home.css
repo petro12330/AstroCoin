@@ -1,0 +1,60 @@
+
+/* Body styles start*/
+
+.main{
+     font-family: Mabry Pro;
+
+    color: #FFFFFF;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+}
+h1.title{
+font-weight: bold;
+font-size: 60px;
+}
+.content{
+   margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row{
+max-width: 850px;
+}
+
+li.body_item{
+margin-top: 35px;
+}
+li.body_item{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button.shop{
+    margin-top: 63px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 25px 67px 25px 67px ;
+    font-family: Mabry Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #1F2144;
+}
+button.shop:hover, button.shop:focus, button.shop:active, a{
+    color: #4AD295;
+}
+.body_text{
+margin-top:353px;
+max-width:655px;
+
+}
+p.title{
+font-weight: bold;
+font-size: 60px;
+
+}
+/* body styles end*/

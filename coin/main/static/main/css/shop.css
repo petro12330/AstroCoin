@@ -1,0 +1,229 @@
+body {
+    background: #555AB1 url(../img/svg/back_img.svg);/* Цвет фона */
+    background-repeat: ;
+     background-size: 100%;
+     position: relative;
+     width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    background-size: cover;
+   }
+html{
+    box-sizing: border-box;
+}
+*,*:: before,* ::after{
+    box-sizing: inherit;
+}
+/* Headers styles start*/
+
+.header{
+     width: 100vw;
+    top: 0;
+    left: 0;
+    height: 80px;
+    position: relative;
+     min-width: 100%;
+    background: #1F2144;
+    font-family: Mabry Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+}
+.wrapper{
+    max-width: 1110px;
+    margin: 0 auto
+
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.header_item{
+    margin-right: 35px;
+    margin-top: 40px
+
+}
+.header_item:last-child{
+    margin-right: 0px;
+    margin-top: 25px
+    }
+.header_link{
+    color:#FFFFFF;
+    text-decoration: none
+}
+a.button1{
+
+    display: inline-block;
+
+    background: #FFFFFF;
+    width: 154px;
+    height: 20px;
+    padding: 10px 20px 7px 20px ;
+    color: #1F2144;
+    border-radius: 3px;
+    text-decoration: none
+}
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.header_link:hover, .header_link:focus, .header_link:active, a{
+    color: #4AD295;
+}
+a.button1:hover, a.button1:focus, a.button1:active{
+    color: #4AD295;
+}
+/* Headers styles end*/
+main{
+min-height: calc(100vh - 80px);
+}
+.content{
+
+    max-width: 1110px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 130px;
+
+
+
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+
+}
+
+.col{
+
+width: 347px;
+height: 355px;
+background: #FFFFFF;
+border-radius: 20px;
+margin-bottom: 20px
+
+}
+.body_card{
+    max-width: 256px;
+    padding-left: 45px;
+    text-align: center
+
+
+
+}
+p.text{
+    font-family: Mabry Pro;
+    font-style: normal;
+    font-size: 20px;
+    margin-top:20px;
+    color: #555AB1;
+
+}
+p.price{
+
+font-family: Mabry Pro;
+font-style: normal;
+margin-top:17px;
+font-weight: bold;
+font-size: 20px;
+line-height: 20px;
+color: #1F2144;
+}
+img.card_pic{
+width: 256px;
+height: 256px;}
+img.star{
+padding-bottom: 7px
+
+
+
+}
+.col:hover, .col:focus, .col:active{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.6);
+     transition: 0.5s; /* Время эффекта */
+     transform: scale(1.1);
+   }
+
+
+/* body styles end*/
+
+
+
+
+
+
+
+
+
+
+footer{
+margin-top: 410px;
+height: 80px;
+height:100%;
+background: #1F2144;
+}
+.footer_list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0px
+}
+a.button2{
+
+    display: inline-block;
+    align-items: center;
+    background: #1F2144;
+
+    width: 154px;
+    height: 20px;
+    padding: 10px 21px 10px 21px ;
+    color: #1F2144;
+    border-radius: 3px;
+    border: 3px solid;
+    color:#555AB1;
+    text-decoration: none
+}
+
+
+.footer_item{
+    margin-right: 35px;
+
+
+}
+.footer_item:last-child{
+    margin-right: 0px;
+
+    }
+.footer_link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+    color:#555AB1;
+    text-decoration: none
+}
+
+.footer_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0;
+    height: 80px;
+    justify-content: space-between;
+}
+.footer_link:hover, .footer_link:focus, .footer_link:active{
+    color: #4AD295;
+}
+a.button2:hover, a.button1:focus, a.button1:active{
+    color: #4AD295;
+}

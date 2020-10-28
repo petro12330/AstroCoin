@@ -1,0 +1,86 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'main/css/basket.css' %}">
+{% endblock %}
+{% block body %}
+        <main class="main">
+            <div class="content">
+                <div class="row">
+                    <div class="text">
+                        <h1>
+                            Корзина
+                        </h1>
+                        <h2>
+                            На твоем счету:
+                        </h2>
+                        <div class="balance">
+                            999
+
+                        </div>
+                         <img src=" {% static 'main/img/svg/star.svg' %}" alt="звезда" width="33" height="33" class="star">
+                    </div>
+                    <ul class="body_list">
+                        <li class="body_item">
+                            <img src="{% static 'main/img/jpeg/1.jpg' %}" alt="Купи" class="body_pic">
+                            <h3>
+                                Стикер Программинг
+                            </h3>
+                            <button class="minus">
+                                    -
+                            </button>
+                            <div class="kol_vo">
+                                        1
+                            </div>
+                            <button class="plus">
+                                    +
+                            </button>
+                            <div class="price">
+                                50
+                            </div>
+                            <img src=" {% static 'main/img/svg/star.svg' %}" alt="звезда" width="33" height="33" class="star">
+
+
+                        </li>
+
+                        <li class="body_item">
+                            <img src="{% static 'main/img/jpeg/1.jpg' %}" alt="Купи" class="body_pic">
+                            <h3>
+                                Стикер Программинг
+                            </h3>
+                            <button class="minus">
+                                    -
+                            </button>
+                            <div class="kol_vo">
+                                        1
+                            </div>
+                            <button class="plus">
+                                    +
+                            </button>
+                            <div class="price">
+                                50
+                            </div>
+                            <img src=" {% static 'main/img/svg/star.svg' %}" alt="звезда" width="33" height="33" class="star">
+
+
+                        </li>
+                    </ul>
+                    <div class="itog">
+                        <p class="text">
+                            Всего:
+                        </p>
+                        <div class="price">
+                                50
+                            </div>
+                            <img src=" {% static 'main/img/svg/star.svg' %}" alt="звезда" width="33" height="33" class="star">
+                        <button class="buy">
+                            Купить
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+{% endblock %}

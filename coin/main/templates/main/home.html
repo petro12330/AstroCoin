@@ -1,0 +1,57 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block style %}
+    <link rel="stylesheet" href="{% static 'main/css/home.css' %}">
+{% endblock %}
+{% block body %}
+        <main class="main">
+            <div class="content">
+                <div class="row">
+                    <h1 class="title">
+                        Зарабатывай астракоины и покупай на них подарки в нашем магазине
+                    </h1>
+                    <ul class="body_list">
+                        <li class="body_item">
+                            <img src="static/main/img/svg/star2.svg" alt="звезда" width="31" height="31" class="star">
+                            Астрокоины - это внутренняя валюта Алгоритмики.
+
+                        </li>
+                         <li class="body_item">
+                             <img src="static/main/img/svg/star2.svg" alt="звезда" width="31" height="31" class="star">
+                            Астрокоины можно заработать выполняя различные задания,
+                            а также проявляя активное участие в соревнованиях.
+
+                        </li>
+                         <li class="body_item">
+                             <img src="static/main/img/svg/star2.svg" alt="звезда" width="31" height="31" class="star">
+                            Астрокоинами можно расплатиться в нашем магазине подарков.
+                        </li>
+
+                    </ul>
+                    <a href="/shop">
+                         <button class="shop">
+                         Перейти в магазин
+                        </button>
+                    </a>
+
+                    <div class="body_text">
+                        <p class="title">
+                            Для чего нужна бонусная программа?
+                        </p>
+                        <p class="text">
+
+                            Алгоритмика не просто учит детей программировать.
+                            Наша задача - подготовить ребенка к любой задаче, научить его применять полученные знания на практике, заинтересовать в учебе.
+                        </p>
+                        <a href="/get">
+                             <button class="shop">
+                             Как получить?
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+{% endblock %}
